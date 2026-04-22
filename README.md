@@ -97,9 +97,9 @@ If you like this project:
 * Form validation improvements
 * Email notifications on submission
 * Admin dashboard
+* CRM integration
+* Backend using Node.js / Firebase
 
 ## 📸 Preview
 
 ![Landing Page Screenshot](screencapture.png)
-* CRM integration
-* Backend using Node.js / Firebase
