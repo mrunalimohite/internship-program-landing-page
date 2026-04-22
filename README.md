@@ -73,11 +73,7 @@ This project is created to:
 
 ## 📸 Preview
 
-(Add screenshot here)
-
-```id="img123"
 ![Landing Page Screenshot](screencapture.png)
-```
 
 ## 🚀 Live Demo
 
