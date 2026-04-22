@@ -1,2 +1,113 @@
-# internship-program-landing-page
-A responsive internship program landing page built using HTML, CSS, and JavaScript with Google Sheets integration for storing form data. Includes lead generation forms, WhatsApp integration, brochure download, and modern UI design.
+# 🚀 Internship Program Landing Page
+
+A modern, responsive, and high-converting landing page designed to promote an **Internship Program** with **real-time data storage using Google Sheets**.
+
+This project demonstrates **frontend development + real-world lead management system**.
+
+
+## 📌 Features
+
+* 🎯 Clean and professional UI design
+* 📱 Fully responsive (Mobile, Tablet, Desktop)
+* 📊 Internship plans & pricing section
+* 🧲 Lead generation forms (Hero + Contact form)
+* 📥 Brochure download functionality
+* 💬 WhatsApp integration
+* ⭐ Testimonials section
+* 🔥 Call-to-action & urgency sections
+* 🎨 Smooth animations and effects
+* 📄 **Google Sheets integration (stores user data)**
+* 🍔 Mobile navigation menu using JavaScript
+
+
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3 (Flexbox + Grid)
+* JavaScript (Vanilla JS)
+* Google Apps Script (for form handling)
+* Google Sheets (database)
+* Font Awesome
+
+
+## 📂 Project Structure
+
+```id="1a2b3c"
+📁 job-ready
+│── index.html
+│── style.css
+│── script.js
+
+```
+
+
+## ⚙️ How It Works
+
+1. User fills the form on the landing page
+2. JavaScript captures the form data
+3. Data is sent to **Google Apps Script Web App**
+4. The script stores the data in **Google Sheets**
+
+
+## 🔗 Google Sheets Integration
+
+* Uses **Google Apps Script Web App URL**
+* Sends data using `fetch()` API
+* Stores:
+
+  * Name
+  * Email
+  * Phone
+  * Source (Hero Form / Contact Form)
+
+
+## 🎯 Purpose of the Project
+
+This project is created to:
+
+* Build a **real-world lead generation landing page**
+* Practice frontend + basic backend integration
+* Learn how to connect **forms with Google Sheets**
+* Improve UI/UX and marketing design skills
+
+
+## 📸 Preview
+
+(Add screenshot here)
+
+```id="img123"
+![Landing Page Screenshot](your-image-link.png)
+```
+
+## 🚀 Live Demo
+
+(Add your deployed link)
+
+```id="live123"
+https://your-live-link.com
+```
+
+
+## 👨‍💻 Author
+
+**Mrunali Vijay Mohite**
+
+* Frontend Developer
+* Interested in real-world web applications
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 📢 Share it
+
+
+## 🔮 Future Improvements
+
+* Form validation improvements
+* Email notifications on submission
+* Admin dashboard
+* CRM integration
+* Backend using Node.js / Firebase
