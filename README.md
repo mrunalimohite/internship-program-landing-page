@@ -65,23 +65,15 @@ This project demonstrates **frontend development + real-world lead management sy
 
 This project is created to:
 
-* Build a **real-world lead generation landing page**
+* Build a **Internship Program landing page for Techkraftiers Digital**
 * Practice frontend + basic backend integration
 * Learn how to connect **forms with Google Sheets**
 * Improve UI/UX and marketing design skills
 
 
-## 📸 Preview
-
-![Landing Page Screenshot](screencapture.png)
-
 ## 🚀 Live Demo
 
-(Add your deployed link)
-
-```id="live123"
-https://your-live-link.com
-```
+https://techkraftiersdigital-internshiprogram.netlify.app/
 
 
 ## 👨‍💻 Author
@@ -105,5 +97,9 @@ If you like this project:
 * Form validation improvements
 * Email notifications on submission
 * Admin dashboard
+
+## 📸 Preview
+
+![Landing Page Screenshot](screencapture.png)
 * CRM integration
 * Backend using Node.js / Firebase
