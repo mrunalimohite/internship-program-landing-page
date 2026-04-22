@@ -76,7 +76,7 @@ This project is created to:
 (Add screenshot here)
 
 ```id="img123"
-![Landing Page Screenshot](your-image-link.png)
+![Landing Page Screenshot](screencapture.png)
 ```
 
 ## 🚀 Live Demo
