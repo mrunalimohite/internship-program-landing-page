@@ -39,7 +39,7 @@
                     <li>✔ Affordable Fees</li>
                 </ul>
                 <div class="cta-button">
-                    <a href="Digital_Marketing_Internship_brochure.pdf" target="_blank" class="cta-demo">Get Brochure</a>
+                    <a href="plans-three-month.pdf" target="_blank" class="cta-demo">Get Brochure</a>
                     <a href="https://wa.me/7738415492/" target="_blank" class="cta-whats-app"><i class="fa-brands fa-whatsapp"></i>WhatsApp Now</a>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                     <li><i class="fa-solid fa-check"></i> Industry exposure</li>
                 </ul>
 
-                <a href="Digital_Marketing_Internship_brochure.pdf" target="_blank" class="price-btn">Download Brochure</a>
+                <a href="one-month.pdf" target="_blank" class="price-btn">Download Brochure</a>
             </div>
 
             <!-- 2 Months (Featured) -->
@@ -150,7 +150,7 @@
                     <li><i class="fa-solid fa-check"></i> Portfolio + Resume support</li>
                 </ul>
 
-                <a href="Digital_Marketing_Internship_brochure.pdf" target="_blank" class="price-btn">Download Brochure</a>
+                <a href="two-moth.pdf" target="_blank" class="price-btn">Download Brochure</a>
             </div>
 
             <!-- 3 Months -->
@@ -173,7 +173,7 @@
                     <li><i class="fa-solid fa-check"></i> Placement support</li>
                 </ul>
 
-                <a href="Digital_Marketing_Internship_brochure.pdf" target="_blank" class="price-btn">Download Brochure</a>
+                <a href="three-month.pdf" target="_blank" class="price-btn">Download Brochure</a>
             </div>
 
         </div>
@@ -343,7 +343,53 @@ Only limited students per batch to maintain quality.
             <p>📍Navi Mumbai, Maharashtra</p>
         </div>
     </footer>
+    <button id="scrollToTop" class="scroll-btn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div id="internshipModal" class="custom-modal">
+        <div class="modal-wrapper">
+            <span class="close-trigger" onclick="closeInternship()">&times;</span>
+            <div class="modal-body">
+                <img src="three_plans.png" alt="Digital Marketing Internship Plans" id="modalImg">
+            </div>
+            <div class="modal-footer">
+                <a href="#contact"  class="btn-primary" onclick="closeInternship()">Inquire About Internships</a>
+            </div>
+        </div>
+    </div>
     <!-- Script -->
     <script type="module" src="script.js"></script>
+    <script>
+        function openInternship() {
+            const modal = document.getElementById("internshipModal");
+            if (modal) {
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden"; // Prevent background scrolling
+            }
+        }
+
+        window.addEventListener('load', (event) => {
+            setTimeout(openInternship, 3000); 
+        });
+        // Function to show the internship popup
+        function openInternship() {
+            document.getElementById("internshipModal").style.display = "block";
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
+        }
+
+        // Function to close the popup
+        function closeInternship() {
+            document.getElementById("internshipModal").style.display = "none";
+            document.body.style.overflow = "auto"; // Re-enable scrolling
+        }
+
+        // Close if user clicks outside the image box
+        window.onclick = function(event) {
+            let modal = document.getElementById("internshipModal");
+            if (event.target == modal) {
+                closeInternship();
+            }
+        }
+    </script>
 </body>
 </html>
