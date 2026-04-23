@@ -1,19 +1,33 @@
 const menu = document.getElementById("menu-toggle");
-const icon = menu.querySelector("i"); // target icon properly
+// const icon = menu.querySelector("i"); // target icon properly
 const navbar = document.getElementById("navList");
 
-menu.onclick = () => {
-    navbar.classList.toggle("active");
+// menu.onclick = () => {
+//     navbar.classList.toggle("active");
 
-    // Toggle icon on <i>, not div
-    if (icon.classList.contains('fa-bars')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-xmark');
-    } else {
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
-    }
-};
+//     // Toggle icon on <i>, not div
+//     if (icon.classList.contains('fa-bars')) {
+//         icon.classList.remove('fa-bars');
+//         icon.classList.add('fa-xmark');
+//     } else {
+//         icon.classList.remove('fa-xmark');
+//         icon.classList.add('fa-bars');
+//     }
+// };
+if (menu) {
+    const icon = menu.querySelector("i");
+    menu.onclick = () => {
+        navbar.classList.toggle("active");
+
+        if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    };
+}
 
 // Close menu on link click
 document.querySelectorAll(".navLinks").forEach(link => {
@@ -180,3 +194,5 @@ scrollBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
