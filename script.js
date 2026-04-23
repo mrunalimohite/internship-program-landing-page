@@ -109,7 +109,7 @@ form.addEventListener("submit", function(e){
         source: "contact Form" // 👈 HERE
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbxjz496tS5N1pR3xO3aKLK1C_MQQEXOHxhE-sVRn2Rav9nVB3W-xOUOc1VlJZOdTYCN/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyvdKkQExGG7IKv4qqanErMvSzO5N4bWGBvbhESeBV4Jhqx9-hy2-38flWkMXqSg6wF/exec", {
         method: "POST",
         body: JSON.stringify(data)
     })
@@ -130,7 +130,7 @@ heroForm.addEventListener("submit", function(e){
         source: "Hero Form"
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbxjz496tS5N1pR3xO3aKLK1C_MQQEXOHxhE-sVRn2Rav9nVB3W-xOUOc1VlJZOdTYCN/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyvdKkQExGG7IKv4qqanErMvSzO5N4bWGBvbhESeBV4Jhqx9-hy2-38flWkMXqSg6wF/exec", {
         method: "POST",
         body: JSON.stringify(data)
     })
@@ -160,4 +160,23 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.what-card, .pricing-card, .test-card, .choose-container li').forEach(card => {
     card.classList.add('reveal'); // Apply the base animation class
     observer.observe(card);       // Start watching the card
+});
+
+//scroll to top button
+const scrollBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+  // Show button after scrolling down 400px
+  if (window.pageYOffset > 400) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  // Smooth scroll to the hero section (id="home")
+  document.getElementById("home").scrollIntoView({
+    behavior: "smooth"
+  });
 });
