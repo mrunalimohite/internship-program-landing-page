@@ -1039,8 +1039,8 @@ h2 span {
 /* Mobile Adjustments */
 @media (max-width: 600px) {
     .modal-wrapper {
-        width: 95%;
-        margin: 10px auto;
+        width: 90%;
+        margin: 30px auto;
         padding: 10px;
     }
 }
@@ -1228,7 +1228,26 @@ h2 span {
         font-size: 1.4rem;
         padding: 10px;
     }
-    
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;    /* Center them */
+        gap: 15px;              /* Space between buttons */
+        padding: 0 20px;        /* Side padding for the container */
+    }
+
+    .btn-demo, 
+    .btn-whatsapp {
+        width: 100%;            /* Forces equal width */
+        max-width: 300px;       /* Keeps them from getting too wide on large phones */
+        height: 55px;           /* Standardizes height */
+        padding: 0;             /* Reset padding since height/width are fixed */
+        font-size: 1.6rem;      /* Slightly larger for readability */
+    }
+
+    .btn-whatsapp i {
+        font-size: 2.2rem;      /* Adjust icon size to match text better */
+        margin-right: 8px;      /* Space between icon and text */
+    }
     .footer-content{
         flex-direction: column;
         align-items: center;
