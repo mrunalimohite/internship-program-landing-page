@@ -130,6 +130,9 @@ section{
     line-height: 1.4;
     margin-bottom: 1rem;
 }
+.hero-text h1 span{
+    color: #f06529;
+}
 .hero-text p {
     color: #fff;
     font-size: 1.6rem;
